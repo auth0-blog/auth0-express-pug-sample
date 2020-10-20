@@ -1,0 +1,17 @@
+mixin main-nav(activeRoute)
+  div(class="navbar-nav mr-auto")
+    a(
+      href="/"
+      class="nav-link",
+      class=`${activeRoute === "/" && "router-link-exact-active"}`
+    ) Home
+    a(
+      href="/profile"
+      class="nav-link",
+      class=`${activeRoute === "/profile" && "router-link-exact-active"}`
+    ) Profile
+    a(
+      href="/external-api"
+      class="nav-link",
+      class=`${activeRoute === "/external-api" && "router-link-exact-active"}`
+    ) External API
