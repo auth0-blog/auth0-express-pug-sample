@@ -1,12 +1,11 @@
 extends index
 
-include ../components/_footer
-include ../components/_nav-bar
+include ../components/footer
+include ../components/nav-bar
 
 block layout-content
   div(id="app" class="d-flex flex-column h-100")
     +nav-bar(activeRoute)
     div(class="container flex-grow-1")
-      div(class="mt-5")
-        block content
+      block content
     +footer
