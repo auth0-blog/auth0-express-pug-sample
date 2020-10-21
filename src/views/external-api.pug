@@ -15,10 +15,10 @@ block content
       button(type="button", class="btn btn-primary") Get Public Message
       button(type="button", class="btn btn-primary") Get Protected Message
 
-      if message
-        div(class="mt-5")
-          h6(class="muted") Result
-          div(class="container-fluid")
-            div(class="row")
-              code(class="col-12 text-light bg-dark p-4")
-                | #{JSON.stringify(message, null, 2)}
+    if message
+      div(class="mt-5")
+        h6(class="muted") Result
+        div(class="container-fluid")
+          div(class="row")
+            code(class="col-12 text-light bg-dark p-4")
+              | #{JSON.stringify(message, null, 2)}
