@@ -1,4 +1,5 @@
 include ./_main-nav
+include ./auth-nav
 
 mixin nav-bar(activeRoute)
   div(class="nav-container mb-3")
@@ -6,3 +7,4 @@ mixin nav-bar(activeRoute)
       div(class="container")
         div(class="navbar-brand logo")
         +main-nav(activeRoute)
+        +auth-nav(isAuthenticated)

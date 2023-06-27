@@ -1,0 +1,5 @@
+include ./authentication-button
+
+mixin auth-nav(isAuthenticated)
+  div(class="navbar-nav ml-auto")
+    +authentication-button(isAuthenticated)

@@ -1,0 +1,8 @@
+include ./login-button
+include ./logout-button
+
+mixin authentication-button(isAuthenticated)
+  if isAuthenticated
+    +logout-button
+  else
+    +login-button
